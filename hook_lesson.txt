@@ -1,0 +1,9 @@
+本节主要介绍各种 hook 钩子函数的应用：
+
+    (1) useState 为函数组件提供了数据、修改数据的方法，只能在函数组件中，使用 useState(初始值) 创建
+
+    (2) useEffect 副作用处理，在dom渲染之后执行，可以设置为初始执行一次，可以依赖某个控制项
+
+    (3) useRef 获取标签的dom属性，或者获取类组件的各种属性（state、方法等）
+
+    (4) useContext 上下文通信 先创建：createContext；然后设置数据源：<Context.Provider value={datasource}></Context.Provider>；然后子组件使用 useContext(Context) 即可共享数据
